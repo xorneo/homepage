@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+#game-container {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Flex container for the full court */
+#full-court {
+    position: relative;
+    background-color: #27ae60;
+    width: 100%;
+    height: 600px;
+    border: 5px solid #34495e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Allows ball movement */
+}
+
+/* Opponent and player court layout */
+.court-side {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* Court sections (clickable areas) */
+.section {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 32%;
+    border: 1px solid #34495e;
+    cursor: pointer;
+    z-index: 1; /* Ensure sections are clickable */
+}
+
+/* Net styling */
+#net {
+    background-color: #e74c3c;
+    height: 10px;
+    width: 100%;
+    z-index: 2; /* Keep the net on top */
+}
+
+/* Ball styling */
+#ball {
+    width: 20px;
+    height: 20px;
+    background-color: #f1c40f;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3; /* Keep ball on top */
+    top: 50%; /* Default position */
+    left: 50%;
+    display: none; /* Hidden until game starts */
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+#scoreboard {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3498db;
+}

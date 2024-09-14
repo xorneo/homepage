@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickleball Rally Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pickleball Rally Game</h1>
+    <div id="game-container">
+        <div id="full-court">
+            <!-- Opponent's court -->
+            <div class="court-side">
+                <div class="section" id="opponent-section-1" onclick="playerShot(1)"></div>
+                <div class="section" id="opponent-section-2" onclick="playerShot(2)"></div>
+                <div class="section" id="opponent-section-3" onclick="playerShot(3)"></div>
+            </div>
+            <div class="court-side">
+                <div class="section" id="opponent-section-4" onclick="playerShot(4)"></div>
+                <div class="section" id="opponent-section-5" onclick="playerShot(5)"></div>
+                <div class="section" id="opponent-section-6" onclick="playerShot(6)"></div>
+            </div>
+
+            <!-- Net -->
+            <div id="net"></div>
+
+            <!-- Player's court -->
+            <div class="court-side">
+                <div class="section" id="player-section-1" onclick="playerShot(1)"></div>
+                <div class="section" id="player-section-2" onclick="playerShot(2)"></div>
+                <div class="section" id="player-section-3" onclick="playerShot(3)"></div>
+            </div>
+            <div class="court-side">
+                <div class="section" id="player-section-4" onclick="playerShot(4)"></div>
+                <div class="section" id="player-section-5" onclick="playerShot(5)"></div>
+                <div class="section" id="player-section-6" onclick="playerShot(6)"></div>
+            </div>
+
+            <!-- Ball -->
+            <div id="ball"></div>
+        </div>
+        <div id="feedback"></div>
+        <div id="scoreboard">
+            <p>Rally: <span id="rally-count">0</span> / 10</p>
+            <button id="start-game">Start Game</button>
+        </div>
+        <div id="win-percentage"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
