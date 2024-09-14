@@ -10,6 +10,9 @@ function openApp(appName) {
         case 'Take the Money':
             url = 'https://takethemoney.vercel.app/';
             break;
+        case 'Flag Game':
+            url = 'https://flagsgame-two.vercel.app/';
+            break;
         default:
             alert('Coming soon...');
             return;
